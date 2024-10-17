@@ -1,61 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-
-:root {
-    --primary-color : #FF00F7;
-    --primary-color-transparent : #FFCCFD;
-    --dark-primary : #330031;
-    --semiDark-primary : #990094
-}
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html,
-body {
-    font-family: "Comfortaa", sans-serif;
-}
+@import url("/project/variables.css");
 
 .container {
     margin-inline:50px;
@@ -329,16 +272,11 @@ main  .section_title h4 {
 
 .d-flex {
     display: flex;
-}
-.items-center {
-    align-items: center;
-}
-.justfiy-between {
+    justify-items: center;
     justify-content: space-between;
+    margin-inline:20px;
 }
-.justify-center {
-    justify-content : center;
-}
+
 
 footer {
     min-height: 50vh;
@@ -384,6 +322,16 @@ footer {
     text-align: center;
 }
 
-.footer section:last-of-type {
-    
+footer .copyright p {
+    text-align: center;
+    padding-block:10px;
+}
+
+/* TARIFS  */
+
+
+.tarifs .title {
+    text-align: center;
+    font-size: 64px;
+    margin-block:100px
 }
