@@ -51,8 +51,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+*,
 html,
 body {
     font-family: "Comfortaa", sans-serif;
+    box-sizing: border-box;
 }
