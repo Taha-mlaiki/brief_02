@@ -429,3 +429,20 @@ footer .copyright p {
     border-radius: 20px;
     z-index: 1;
 }
+.movies {
+    & .title {
+        margin-block:20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap:5px;
+        margin-left:-20px;
+        & h3 {
+            font-size:25px;
+            font-weight: bold;
+        }
+    }
+    & .content {
+        margin-block: 100px;
+    }
+}
