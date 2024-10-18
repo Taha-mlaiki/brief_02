@@ -383,7 +383,7 @@ footer .copyright p {
   border-radius: 20px;
   padding: 40px;
   margin-inline: 20px;
-  background-image: url("/project/assets/movie-background .png");
+  background-image: url("./assets/movie-background .png");
   position: relative;
   & .content {
     position: relative;
