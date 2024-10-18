@@ -1,7 +1,7 @@
 @import url("/project/variables.css");
 
 .container {
-  margin-inline: 50px;
+  margin-inline: 100px;
 }
 .navbar {
   height: 80px;
@@ -438,7 +438,7 @@ footer .copyright p {
   & .content {
     margin-block: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-inline: auto;
     gap: 30px;
     & .card {
@@ -475,7 +475,7 @@ footer .copyright p {
         z-index: 99;
         color: white;
         & h3 {
-          font-size: 50px;
+          font-size: 40px;
           font-weight: bold;
           margin-top: 5px;
           margin-bottom: 20px;
@@ -525,4 +525,74 @@ footer .copyright p {
         cursor: pointer;
     }
   }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    height: 40vh;
+    margin-top:100px;
+    & .inputs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        & .input {
+            position: relative;
+            & i {
+                position: absolute;
+                left:20px;
+                top:18px;
+                font-size: 25px;
+                color: var(--secondary-color);
+            }
+            & input {
+                width: 100%;
+                padding-block:20px;
+                padding-inline:40px;
+                padding-left:60px;
+                font-size: 20px;
+                border-radius: 15px;
+                background-color: var(--primary-color-transparent);
+                border:none;
+                &:focus {
+                    outline:none;
+                }
+            }
+        } 
+    }
+    & .textarea {
+        width: 100%;
+        height: 100%;
+        & textarea {
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            background-color: var(--primary-color-transparent);
+            padding:15px;
+            border:none;
+            font-size:20px;
+            &:focus {
+                outline:none;
+            }
+        }
+    }
+}
+.submit_button {
+    display: flex;
+    justify-content: end;
+    margin-top:30px;
+    margin-bottom:100px;
+    & button {
+        padding:10px 20px;
+        border-radius: 8px;
+        border:none;
+        background-color: var(--secondary-color);
+        color:white;
+        font-size: 25px;
+        font-weight: bold;
+    }
 }
